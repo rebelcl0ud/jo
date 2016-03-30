@@ -26,8 +26,8 @@ Jo::Application.configure do
   config.assets.js_compressor = :uglifier
   # config.assets.css_compressor = :sass
 
-  # Do not fallback to assets pipeline if a precompiled asset is missed.
-  config.assets.compile = false
+  # DO fallback to assets pipeline if a precompiled asset is missed.
+  config.assets.compile = true #without this change app wont be set up to make it look good 
 
   # Generate digests for assets URLs.
   config.assets.digest = true
