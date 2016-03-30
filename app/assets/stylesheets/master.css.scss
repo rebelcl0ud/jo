@@ -1,3 +1,25 @@
 .clear {
   clear:both;
 }
+
+.title {
+  /* Trebuchet-based sans serif stack */
+  font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+  font-size: 15px;
+  padding-top: 30px;
+}
+
+.links {
+  padding-top: 30px;
+}
+
+.links a {
+  /* Trebuchet-based sans serif stack */
+  font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+  color: black;
+  font-size: 15px;
+}
+
+hr {
+  clear:both;
+}
