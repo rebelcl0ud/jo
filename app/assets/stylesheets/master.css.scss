@@ -5,8 +5,7 @@
 }
 
 .title {
-  /* Trebuchet-based sans serif stack */
-  font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+  font-family: 'quicksandlight';
   font-size: 20px;
   padding-top: 30px;
 }
@@ -22,8 +21,7 @@
 }
 
 .links a {
-  /* Trebuchet-based sans serif stack */
-  font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+  font-family: 'quicksandlight';
   color: black;
   font-size: 15px;
   
@@ -34,7 +32,7 @@ hr {
 }
 
 h1 {
-  font-family: 'trendy_universityregular';
+  font-family: 'quicksandlight';
   text-align: center;
   font-weight: bold;
   font-size: 30px;
@@ -55,5 +53,5 @@ a > b {
 }
 
 .video {
-  padding-top: 100px;
+  padding-top: 120px;
 }
