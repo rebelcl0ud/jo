@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Jo</title>
+  <title>RebelCl0ud Media</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
@@ -9,18 +9,32 @@
 <body>
   <header>
     <div class="col-xs-10 title">
-      Digital Portfolio
+      <%= link_to content_tag(:b, 'Rebel') + 'Cl0ud Media | Digital Portfolio', root_path %>
+
+
+
     </div>
 
     <div class="col-xs-2 links">
-      <%= link_to 'info', '#' %>
-      <%= link_to 'about', '#' %>
+      <%= link_to 'contact', '#' %>
+      &nbsp;&nbsp;
+      <%= link_to 'about', about_path %>
     </div>
   </header>
   <hr />
   <br class="clear" />
 
-<%= yield %>
+  <div class="container">
+    <%= yield %>
+  </div>
+
+  <div class="footer">
+    <div class="container">
+      <div class="col-xs-12">
+       © 2010-2016 RebelCl0ud Media. All Rights Reserved.
+      </div>
+    </div>
+  </div>
 
 </body>
 </html>

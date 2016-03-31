@@ -1,6 +1,8 @@
 Jo::Application.routes.draw do
 
   root 'portfolios#index'
+  get 'about', to: 'portfolios#about'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
