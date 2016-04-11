@@ -11,17 +11,45 @@
   <header>
     <div class="col-xs-10 title">
       <%= link_to content_tag(:b, 'Rebel') + 'Cl0ud Media | Digital Portfolio', root_path %>
-
-
-
     </div>
 
     <div class="col-xs-2 links">
-      <%= link_to 'contact', contact_path %>
+      <!-- Button trigger modal -->
+      <%= link_to 'contact', '#', data: {toggle: 'modal', target: '#myModal'} %>
+      &nbsp;&nbsp;
+      </button>
       &nbsp;&nbsp;
       <%= link_to 'about', about_path %>
     </div>
   </header>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">drop me a line</h4>
+      </div>
+      <%= simple_form_for Contact.new do |f| %>
+        <div class="modal-body">
+          <%= f.input :name, label: "name", placeholder: "Peter Parker" %>
+          <br />
+          <%= f.input :email, label: "email", placeholder: "pparker@dailybugle.com" %>
+          <br />
+          <%= f.input :message, label: "message", placeholder: 'uploading spidey pics now!' %>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">close</button>
+          <%= f.submit 'send', class: 'btn btn-danger' %>
+        </div>
+      <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+
+
   <hr />
   <br class="clear" />
 
