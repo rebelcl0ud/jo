@@ -10,11 +10,11 @@
 <body>
   
   <header>
-    <div class="col-xs-10 title">
+    <div class="col-xs-10 col-md-10 title">
       <%= link_to content_tag(:rebelred, 'Rebel') + 'Cl0ud Media | Digital Portfolio', root_path %>
     </div>
 
-    <div class="col-xs-2 links">
+    <div class="col-xs-2 col-md-2 links">
       <!-- Button trigger modal -->
       <%= link_to 'contact', '#', data: {toggle: 'modal', target: '#myModal'} %>
       &nbsp;&nbsp;
@@ -43,8 +43,8 @@
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">close</button>
           <%= f.submit 'send', class: 'btn btn-danger' %>
-        </div>
-      <% end %>
+        <% end %>
+
       </div>
     </div>
   </div>
@@ -54,17 +54,35 @@
   <hr />
   <br class="clear" />
 
-  <div class="container">
+<!--flash error to notifying the user contact info was invalid and therefore message was not sent -->
+  
+    <% if flash[:error] %>
+    <div class="text-center alert alert-danger">
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <%= flash[:error].html_safe%>
+    </div>
+    <%end%>
+    <%if flash[:notice] %>
+    <div class="text-center alert alert-success">
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <%= flash[:notice]%>
+    </div>
+    <% end %>
     <%= yield %>
   </div>
 
   <div class="footer">
     <div class="container">
       <div class="col-xs-12">
-       <p class="text-muted">© 2010-2016 RebelCl0ud Media. All Rights Reserved.</p>
+       <p class="text-muted">© 2010-2017 RebelCl0ud Media. All Rights Reserved.</p>
       </div>
     </div>
   </div>
 
 </body>
 </html>
+
+
+
+
+
