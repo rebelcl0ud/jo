@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.0.1'
+gem 'rails', '4.2.6'
 
 # Use postgresql as the database for Active Record
 gem 'pg'
@@ -37,8 +37,9 @@ gem 'rails_12factor', group: :production #added for efficiency/ allows you to se
 gem 'bootstrap-sass', '~> 3.3.5.1'
 gem 'sprockets', '2.11.0'
 
-gem 'simple_form'
-gem 'mail_form'
+gem 'simple_form', '>=3.1'
+
+gem "figaro", ">=1.0.0"
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'

@@ -2,8 +2,7 @@ Jo::Application.routes.draw do
 
   root 'portfolios#index'
   get 'about', to: 'portfolios#about'
-  get 'contact', to: 'portfolios#contact'
-
+  
   resources "contacts", only: [:new, :create]
 
 
