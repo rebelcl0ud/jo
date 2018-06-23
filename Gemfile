@@ -35,7 +35,6 @@ end
 gem 'rails_12factor', group: :production #added for efficiency/ allows you to see errors in Heroku logs
 
 gem 'bootstrap-sass', '~> 3.3.5.1'
-gem 'sprockets', '2.11.0'
 
 gem 'simple_form', '>=3.1'
 
